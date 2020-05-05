@@ -13,6 +13,7 @@
     "test": "echo \"Write tests! -> https://gatsby.dev/unit-testing\""
   },
   "dependencies": {
+    "@gatsby-cloud-pkg/lib-graphql": "^1.9.330",
     "clipboard.js": "^1.0.1",
     "fs-extra": "^8.1.0",
     "gatsby": "^2.19.22",
