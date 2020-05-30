@@ -4,9 +4,13 @@ console.dir(process.env)
 
 exports.onPreBuild = async () => {
   let foo = []
-  while (true) {
-    foo.push({ foo: "foo" })
-  }
+
+  return new Promise((resolve, reject) => {
+    while (true) {
+      console.log("On pRe Build")
+      foo.push({ foo: "foo" })
+    }
+  })
 }
 
 exports.onPostBuild = async () => {
