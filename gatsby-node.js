@@ -2,6 +2,13 @@ const fs = require("fs-extra")
 
 console.dir(process.env)
 
+exports.onPreBuild = async () => {
+  let foo = []
+  while (true) {
+    foo.push({ foo: "foo" })
+  }
+}
+
 exports.onPostBuild = async () => {
   await fs.copy("./functions", "./public/functions")
 
