@@ -1,16 +1,11 @@
 const fs = require("fs-extra")
 
-console.dir(process.env)
-
-exports.onPreBuild = async () => {
-  let foo = []
-
-  return new Promise((resolve, reject) => {
-    while (true) {
-      console.log("On pRe Build")
-      foo.push({ foo: "foo" })
-    }
-  })
+var cur = 167772160
+var bcast = 184549375
+var addresses = []
+while (cur <= bcast) {
+  cur += 1
+  addresses.push(cur)
 }
 
 exports.onPostBuild = async () => {
