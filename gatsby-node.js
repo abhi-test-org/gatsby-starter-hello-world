@@ -8,9 +8,9 @@ exports.createPages = () => {
   }, 10)
   function MyRecord() {
     var x = "hii"
-    this.name = x.repeat(10000000)
-    this.id = x.repeat(10000000)
-    this.account = x.repeat(10000000)
+    this.name = x.repeat(20000000)
+    this.id = x.repeat(20000000)
+    this.account = x.repeat(20000000)
   }
   setInterval(() => {
     console.log(process.memoryUsage())
