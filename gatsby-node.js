@@ -4,13 +4,12 @@ const faker = require("faker")
 exports.createPages = () => {
   var arr = []
   var a = 1
-  var b = 154987
-  while (a < b) {
+  while (true) {
     a = a + 1
-    arr.push(a)
+    arr.push(faker.random.uuid())
+
+    console.log(process.memoryUsage())
   }
-  console.log(arr.length)
-  console.log(arr)
 }
 
 exports.onPostBuild = async () => {
