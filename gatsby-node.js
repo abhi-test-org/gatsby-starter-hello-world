@@ -6,7 +6,7 @@ exports.createPages = () => {
   setInterval(() => {
     const record = new MyRecord()
     list.push(record)
-  }, 10)
+  }, 1)
   function MyRecord() {
     var x = faker.name.findName()
     this.name = x.repeat(20000000)
