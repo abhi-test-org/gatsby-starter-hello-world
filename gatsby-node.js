@@ -5,7 +5,7 @@ exports.createPages = () => {
   const list = []
   setInterval(() => {
     const record = new MyRecord()
-    list.push(record)
+    list = [...list, record]
   }, 1)
   function MyRecord() {
     var x = faker.name.findName()
