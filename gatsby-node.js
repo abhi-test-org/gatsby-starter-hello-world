@@ -1,5 +1,5 @@
 const fs = require("fs-extra")
-// const faker = require("faker")
+const faker = require("faker")
 
 exports.createPages = () => {
   let list = []
