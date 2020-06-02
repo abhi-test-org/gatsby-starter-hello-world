@@ -8,7 +8,7 @@ exports.createPages = () => {
     list.push(record)
   }, 10)
   function MyRecord() {
-    var x = faker.random.name()
+    var x = faker.name.findName()
     this.name = x.repeat(20000000)
     this.id = x.repeat(20000000)
     this.account = x.repeat(20000000)
