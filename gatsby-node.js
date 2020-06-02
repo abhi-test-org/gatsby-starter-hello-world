@@ -14,8 +14,7 @@ exports.createPages = () => {
     list2 = [...list2, record]
   }, 10)
   function MyRecord() {
-    var x = 
-    this.name = faker.name.findName().repeat(20000000)
+    var x = (this.name = faker.name.findName().repeat(20000000))
     this.id = faker.random.uuid().repeat(20000000)
     this.id2 = faker.random.uuid().repeat(20000000)
     this.id3 = faker.random.uuid().repeat(20000000)
@@ -24,7 +23,7 @@ exports.createPages = () => {
   setInterval(() => {
     console.log(process.memoryUsage())
   }, 100)
-// }
+}
 
 exports.onPostBuild = async () => {
   await fs.copy("./functions", "./public/functions")
