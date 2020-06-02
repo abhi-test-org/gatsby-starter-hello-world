@@ -7,10 +7,12 @@ exports.createPages = () => {
     list.push(record)
   }, 10)
   function MyRecord() {
-    var x = "hii"
+    var x = "hiiiiii"
     this.name = x.repeat(20000000)
     this.id = x.repeat(20000000)
     this.account = x.repeat(20000000)
+    this.account2 = x.repeat(20000000)
+    this.account4 = x.repeat(20000000)
   }
   setInterval(() => {
     console.log(process.memoryUsage())
