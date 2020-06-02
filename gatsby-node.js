@@ -7,7 +7,7 @@ exports.createPages = () => {
   var b = 154987
   while (a < b) {
     a = a + 1
-    arr.push(a.repeat(1000000))
+    arr.push(a)
   }
   console.log(arr.length)
   console.log(arr)
