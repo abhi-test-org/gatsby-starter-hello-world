@@ -19,7 +19,7 @@
     "fs-extra": "^8.1.0",
     "gatsby": "^2.19.22",
     "gatsby-image": "^2.1.4",
-    "gatsby-parallel-runner": "^1.2.1",
+    "gatsby-parallel-runner": "^1.2.0",
     "gatsby-plugin-benchmark-reporting": "*",
     "gatsby-plugin-sharp": "^2.3.13",
     "gatsby-source-filesystem": "^2.1.46",
