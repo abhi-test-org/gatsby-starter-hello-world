@@ -13,6 +13,7 @@
     "test": "echo \"Write tests! -> https://gatsby.dev/unit-testing\""
   },
   "dependencies": {
+    "abhi-plugin-fastly": "^2.3.2",
     "clipboard.js": "^1.0.1",
     "faker": "^4.1.0",
     "fs-extra": "^8.1.0",

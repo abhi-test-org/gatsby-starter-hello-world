@@ -1,15 +1,13 @@
 const fs = require("fs-extra")
-const faker = require("faker")
 
-exports.createPages = () => {
-  var arr = []
-  var a = 1
-  while (true) {
-    a = a + 1
-    arr.push(faker.random.uuid())
-
-    console.log(process.memoryUsage())
-  }
+exports.createPages = (graphql, { createRedirect }) => {
+  // Removed support page in favor of contact us
+  createRedirect({
+    fromPath: `/about/`,
+    toPath: `/about-2/`,
+    isPermanent: true,
+    force: true,
+  })
 }
 
 exports.onPostBuild = async () => {
