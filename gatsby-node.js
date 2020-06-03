@@ -1,6 +1,6 @@
 const fs = require("fs-extra")
 
-exports.createPages = (graphql, { createRedirect }) => {
+exports.createPages = ({ _graphql, actions: { createRedirect } }) => {
   // Removed support page in favor of contact us
   createRedirect({
     fromPath: `/about/`,
