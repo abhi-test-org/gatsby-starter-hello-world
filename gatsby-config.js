@@ -17,6 +17,5 @@ module.exports = {
     `abhi-plugin-fastly`,
     `gatsby-transformer-sharp`,
     `gatsby-plugin-sharp`,
-    `gatsby-plugin-benchmark-reporting`,
   ],
 }
