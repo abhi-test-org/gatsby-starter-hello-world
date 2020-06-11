@@ -18,5 +18,5 @@ module.exports = {
     `gatsby-transformer-sharp`,
     `gatsby-plugin-sharp`,
   ],
-  pathPrefix: `/hello-world`,
+  assetPrefix: `/hello-world`,
 }
