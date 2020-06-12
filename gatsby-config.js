@@ -18,4 +18,5 @@ module.exports = {
     `gatsby-transformer-sharp`,
     `gatsby-plugin-sharp`,
   ],
+  assetPrefix: `/hello-world`,
 }
