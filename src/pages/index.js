@@ -33,7 +33,8 @@ const Image = () => (
 
 export default () => (
   <div>
-    This is some!!!
+    This is some text!!!! Yo Hi
+
     <div style={{ maxWidth: 600 }}>
       <Image />
     </div>
