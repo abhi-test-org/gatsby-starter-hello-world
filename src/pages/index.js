@@ -35,7 +35,7 @@ export default () => (
   <div>
     This is!!
     <div style={{ maxWidth: 600 }}>
-      <Image />
+      <Image /
     </div>
   </div>
 )
