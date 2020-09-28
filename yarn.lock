@@ -2787,10 +2787,10 @@ abhi-plugin-fastly@^2.3.3:
     lodash "^4.17.15"
     webpack-assets-manifest "^3.1.1"
 
-abhi-plugin-ipc-test@^0.1.3:
-  version "0.1.3"
-  resolved "https://registry.yarnpkg.com/abhi-plugin-ipc-test/-/abhi-plugin-ipc-test-0.1.3.tgz#7b9f422872757ce78f74aeb671651895e763971f"
-  integrity sha512-630SxFPPRoKomvJwVIqaW2aKHVYMeONynn7Md/jgXVzS8RiomsnEirVoEIN7Ze3/GiylJagJELXmYeutqT1vJQ==
+abhi-plugin-ipc-test@^0.1.4:
+  version "0.1.4"
+  resolved "https://registry.yarnpkg.com/abhi-plugin-ipc-test/-/abhi-plugin-ipc-test-0.1.4.tgz#30e4d6c5e06ab97e02f3caf9f436df527a5c4a4a"
+  integrity sha512-v/WywFfd9uOUiyxGzrGkzzOEllmOEKQ8RECJr+YS32lfLf6kK19avDCO5RDjUf+VWTnBnpXI/yCFEfi48CYzaA==
   dependencies:
     gatsby "^2.24.63"
     gatsby-cli "^2.12.101"
