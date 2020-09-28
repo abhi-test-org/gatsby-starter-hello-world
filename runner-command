@@ -1,0 +1,9 @@
+#!/bin/bash
+which node 
+
+NODEZ="/Users/abhiaiyer/.nvm/versions/node/v12.18.2/bin/node"
+GATSBY="./node_modules/.bin/gatsby"
+echo "Node version $(node --version)"
+echo "Gatsby version $(${GATSBY} --version)"
+
+${GATSBY} build
