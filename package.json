@@ -10,6 +10,7 @@
     "format": "prettier --write src/**/*.{js,jsx}",
     "start": "npm run develop",
     "serve": "gatsby serve",
+    "build-ipc": "gatsby-ipc",
     "test": "echo \"Write tests! -> https://gatsby.dev/unit-testing\""
   },
   "dependencies": {
@@ -36,6 +37,8 @@
     "sharp": "0.22.1"
   },
   "devDependencies": {
+    "gatsby-build-ipc": "^1.0.7",
+    "gatsby-ipc": "^1.0.9",
     "prettier": "^1.16.4"
   },
   "repository": {
