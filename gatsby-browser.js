@@ -16,7 +16,7 @@ function PreviewProvider({ children }) {
 
       setTimeout(() => {
         window.location.reload()
-      }, 5000)
+      }, 1000)
     })
 
     return () => {
@@ -38,7 +38,7 @@ function PreviewProvider({ children }) {
             textAlign: `center`,
           }}
         >
-          You Preview is reloading...
+          Your Preview is reloading...
         </div>
       )}
 
