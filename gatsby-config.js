@@ -35,9 +35,7 @@ module.exports = {
       },
     },
     `abhi-plugin-fastly`,
-    `abhi-plugin-ipc-test`,
     `gatsby-transformer-sharp`,
     `gatsby-plugin-sharp`,
   ],
-  assetPrefix: `/hello-world`,
 }
