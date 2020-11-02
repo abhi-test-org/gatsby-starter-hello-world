@@ -10,11 +10,11 @@ function PreviewProvider({ children }) {
     const socket = io()
 
     socket.on("connect", () => {
-      console.log("Connected")
+      console.log("Connected to cloud runner")
     })
 
     socket.on("reload", data => {
-      console.log(data)
+      console.log(`Received data for reload`, data)
       setInProgess(false)
       setShowReloadBar(true)
 
@@ -24,7 +24,7 @@ function PreviewProvider({ children }) {
     })
 
     socket.on("building", data => {
-      console.log(data)
+      console.log(`Received data for building`, data)
       setInProgess(true)
       setShowReloadBar(false)
     })
