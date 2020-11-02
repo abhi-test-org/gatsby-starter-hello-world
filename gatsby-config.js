@@ -5,6 +5,7 @@ module.exports = {
     author: `@gatsbyjs`,
   },
   plugins: [
+    "abhi-plugin-gatsby-preview",
     {
       resolve: `gatsby-source-filesystem`,
       options: {
