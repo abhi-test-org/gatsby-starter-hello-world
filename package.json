@@ -18,7 +18,7 @@
     "clipboard.js": "^1.0.1",
     "faker": "^4.1.0",
     "fs-extra": "^8.1.0",
-    "gatsby": "^2.24.8",
+    "gatsby": "^2.24.91",
     "gatsby-image": "^2.1.4",
     "gatsby-parallel-runner": "^1.2.0",
     "gatsby-plugin-benchmark-reporting": "*",
