@@ -2,6 +2,8 @@ const React = require("react")
 const io = require("socket.io-client")
 
 function PreviewProvider({ children }) {
+  const [showReloadBar, setShowReloadBar] = React.useState(false)
+
   React.useEffect(() => {
     const socket = io()
 
@@ -10,7 +12,11 @@ function PreviewProvider({ children }) {
     })
 
     socket.on("reload", () => {
-      window.location.reload()
+      setShowReloadBar(true)
+
+      setTimeout(() => {
+        window.location.reload()
+      }, 5000)
     })
 
     return () => {
@@ -18,7 +24,27 @@ function PreviewProvider({ children }) {
     }
   })
 
-  return <>{children}</>
+  return (
+    <>
+      {showReloadBar && (
+        <div
+          style={{
+            position: `fixed`,
+            width: `100%`,
+            top: 0,
+            left: 0,
+            backgroundColor: `purple`,
+            color: `white`,
+            textAlign: `center`,
+          }}
+        >
+          You Preview is reloading...
+        </div>
+      )}
+
+      {children}
+    </>
+  )
 }
 
 exports.wrapRootElement = ({ element }) => {
