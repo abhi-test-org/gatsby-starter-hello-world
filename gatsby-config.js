@@ -14,6 +14,28 @@ module.exports = {
         path: `${__dirname}/src/images`,
       },
     },
+    {
+      resolve: `gatsby-plugin-netlify`,
+      options: {
+        mergeSecurityHeaders: false,
+        headers: {
+          "/dashboard/previews/login": [],
+        },
+        transformHeaders: (headers, path) => {
+          if (new RegExp("/dashboard/previews/login").test(path)) {
+            return headers
+          }
+
+          return [
+            "X-Frame-Options: DENY",
+            "X-XSS-Protection: 1; mode=block",
+            "X-Content-Type-Options: nosniff",
+            "Referrer-Policy: same-origin",
+            ...headers,
+          ]
+        },
+      },
+    },
     `abhi-plugin-fastly`,
     `abhi-plugin-ipc-test`,
     `gatsby-transformer-sharp`,
