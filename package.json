@@ -14,13 +14,11 @@
   },
   "dependencies": {
     "abhi-plugin-fastly": "^2.3.3",
-    "abhi-plugin-ipc-test": "^0.1.4",
     "clipboard.js": "^1.0.1",
     "faker": "^4.1.0",
     "fs-extra": "^8.1.0",
     "gatsby": "^2.24.91",
     "gatsby-image": "^2.1.4",
-    "gatsby-parallel-runner": "^1.2.0",
     "gatsby-plugin-benchmark-reporting": "*",
     "gatsby-plugin-netlify": "^2.3.16",
     "gatsby-plugin-sharp": "^2.3.13",
