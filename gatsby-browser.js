@@ -5,8 +5,12 @@ function PreviewProvider({ children }) {
   React.useEffect(() => {
     const socket = io()
 
-    socket.on("reload", data => {
-      console.log(data)
+    socket.on("connect", () => {
+      console.log("Connected")
+    })
+
+    socket.on("reload", () => {
+      window.location.reload()
     })
 
     return () => {
