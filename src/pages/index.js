@@ -33,7 +33,7 @@ const Image = () => (
 
 export default () => (
   <div>
-    This is Inc Preview duh!
+    This is Inc Preview !!!
     <div style={{ maxWidth: 600 }}>
       <Image />
     </div>
