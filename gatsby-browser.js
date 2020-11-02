@@ -1,7 +1,7 @@
 const React = require("react")
 const io = require("socket.io-client")
 
-exports.wrapRootElement = ({ element }) => {
+function PreviewProvider({ children }) {
   React.useEffect(() => {
     const socket = io()
 
@@ -13,5 +13,10 @@ exports.wrapRootElement = ({ element }) => {
       return socket.close()
     }
   })
-  return <>{element}</>
+
+  return <>{children}</>
+}
+
+exports.wrapRootElement = ({ element }) => {
+  return <PreviewProvider>{element}</PreviewProvider>
 }

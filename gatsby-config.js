@@ -1,5 +1,3 @@
-console.log(process.env.INCOMING_HOOK_BODY, "HOOK BODY")
-
 module.exports = {
   siteMetadata: {
     title: `Gatsby Default Starter`,
