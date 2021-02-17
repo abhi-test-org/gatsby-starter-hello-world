@@ -13,7 +13,6 @@
     "test": "echo \"Write tests! -> https://gatsby.dev/unit-testing\""
   },
   "dependencies": {
-    "@gatsby-cloud-pkg/lib-util": "^1.10.126",
     "abhi-plugin-fastly": "^2.3.3",
     "abhi-plugin-gatsby-preview": "^0.0.1",
     "clipboard.js": "^1.0.1",
