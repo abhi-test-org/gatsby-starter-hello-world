@@ -7,6 +7,12 @@ module.exports = {
   plugins: [
     "abhi-plugin-gatsby-preview",
     {
+      resolve: `gatsby-plugin-sitemap`,
+      options: {
+        sitemapSize: 5000,
+      },
+    },
+    {
       resolve: `gatsby-source-filesystem`,
       options: {
         name: `images`,
