@@ -31,6 +31,7 @@
     "netlify": "^3.0.0",
     "react": "^16.8.4",
     "react-dom": "^16.8.4",
+    "sharp": "^0.27.2",
     "uuid": "^3.3.2"
   },
   "resolutions": {
