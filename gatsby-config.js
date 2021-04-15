@@ -7,6 +7,7 @@ module.exports = {
   },
   plugins: [
     "abhi-plugin-gatsby-preview",
+    "gatsby-plugin-gatsby-cloud",
     {
       resolve: `gatsby-plugin-sitemap`,
       options: {
