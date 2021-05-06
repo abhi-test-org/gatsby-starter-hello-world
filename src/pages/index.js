@@ -20,7 +20,7 @@ const Image = () => (
       query {
         placeholderImage: file(relativePath: { eq: "gatsby-astronaut.png" }) {
           childImageSharp {
-            fluid(maxWidth: 300) {
+            fluid(maxWidth: 200) {
               ...GatsbyImageSharpFluid
             }
           }
@@ -33,7 +33,7 @@ const Image = () => (
 
 export default () => (
   <div>
-    This is Inc Preview !!!
+    This is Sparta!
     <div style={{ maxWidth: 600 }}>
       <Image />
     </div>
